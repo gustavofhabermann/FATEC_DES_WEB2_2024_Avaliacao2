@@ -1,0 +1,20 @@
+.voltar{
+    margin-top: 1rem;
+    height: 5vh;
+    width: 10vw;
+    font-size: 18px;
+    color: white;
+    background-color: #a0261d;
+    border: 1px solid black;
+    text-decoration: none;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.voltar:hover{
+    background-color: #e72517;
+    width: 10.5vw;
+    height: 5.5vh;
+}

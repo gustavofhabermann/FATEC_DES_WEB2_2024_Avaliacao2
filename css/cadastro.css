@@ -1,0 +1,59 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    padding: 2rem;
+}
+
+.inputs{
+    margin-bottom: 2rem;
+    font-size: 18px;
+}
+
+.inputs input{
+    border-radius: 10px;
+    width: 15vw;
+    height: 1.3rem;
+}
+
+.dropdown{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.button button{
+    background-color: #5252fc;
+    color: white;
+    width: 10vw;
+    height: 5vh;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+button:hover{
+    background-color: #2a2aff;
+    width: 10.5vw;
+    height: 5.5vh;
+}
+
+.voltar{
+    height: 5vh;
+    width: 10vw;
+    font-size: 18px;
+    color: white;
+    background-color: #a0261d;
+    border: 1px solid black;
+    text-decoration: none;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.voltar:hover{
+    background-color: #e72517;
+    width: 10.5vw;
+    height: 5.5vh;
+}
