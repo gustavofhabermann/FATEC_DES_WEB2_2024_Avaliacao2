@@ -10,8 +10,22 @@ require './classes/cadastro.php';
 $cadastro = new Cadastro();
 $vagas = $cadastro->Listar_Vagas();
 
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/visualizar.css">
+</head>
+<body>
+    
+
+<?php
 if (count($vagas) > 0) {
-    echo "<table border='1'>
+    echo "<table border='2'>
             <tr>
                 <th>ID</th>
                 <th>Nome da Empresa</th>
@@ -31,7 +45,13 @@ if (count($vagas) > 0) {
               </tr>";
     }
     echo "</table>";
+
 } else {
     echo "Nenhuma vaga disponível.";
 }
 ?>
+
+<a href="home.php" class="voltar">voltar</a>
+
+</body>
+</html>
