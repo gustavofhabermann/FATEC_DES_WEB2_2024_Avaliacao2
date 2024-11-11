@@ -9,9 +9,9 @@ require './classes/cadastro.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nomeEmpresa = $_POST['nome_empresa'];
-    $whatsapp = $_POST['whatsapp'];
-    $email = $_POST['email'];
-    $descricao = $_POST['descricao'];
+    $whatsapp = $_POST['numero_whatsapp'];
+    $email = $_POST['email_contato'];
+    $descricao = $_POST['descritivo_vaga'];
     $curso = $_POST['curso'];
 
     $cadastro = new Cadastro();
@@ -25,9 +25,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <form method="POST" action="cadastro_vaga.php">
     Nome da Empresa: <input type="text" name="nome_empresa" required><br>
-    WhatsApp: <input type="text" name="whatsapp" required><br>
-    E-mail: <input type="email" name="email" required><br>
-    Descrição: <input type="text" name="descricao" required><br>
+    Numero de WhatsApp: <input type="text" name="numero_whatsapp" required><br>
+    E-mail para contato: <input type="email" name="email_contato" required><br>
+    Descrição: <input type="text" name="descritivo_vaga" required><br>
     Curso: 
     <select name="curso" required>
         <option value="1">DSM</option>
