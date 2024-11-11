@@ -18,8 +18,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remover Vaga</title>
+    <link rel="stylesheet" href="./css/remover_vaga.css">
+</head>
+<body>
+    
 
-<form method="POST" action="remover_vaga.php">
-    ID da Vaga: <input type="number" name="id" required><br>
-    <button type="submit">Remover Vaga</button>
-</form>
+    <form method="POST" action="remover_vaga.php">
+
+        <div class="input">  
+            ID da Vaga: <input type="number" name="id" required><br>
+        </div>
+
+        <button type="submit">Remover Vaga</button>
+        </form>
+
+        <a href="home.php" class="voltar">Voltar</a>
+
+</body>
+</html>
