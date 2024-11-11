@@ -24,9 +24,9 @@ if (count($vagas) > 0) {
         echo "<tr>
                 <td>{$vaga['id']}</td>
                 <td>{$vaga['nome_empresa']}</td>
-                <td>{$vaga['whatsapp']}</td>
-                <td>{$vaga['email']}</td>
-                <td>{$vaga['descricao']}</td>
+                <td>{$vaga['numero_whatsapp']}</td>
+                <td>{$vaga['email_contato']}</td>
+                <td>{$vaga['descritivo_vaga']}</td>
                 <td>" . ($vaga['curso'] == 1 ? "DSM" : "GE") . "</td>
               </tr>";
     }
