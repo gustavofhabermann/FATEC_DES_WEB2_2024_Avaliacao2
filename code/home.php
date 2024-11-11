@@ -10,17 +10,21 @@ require_once './classes/cadastro.php';
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Cadastro de Vagas de Estágio</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <center>
+    <header>
         <h2>Vagas de Estágio</h2>
-    </center>
+    </header>
     
     <br>
-    <a href="cadastro_vaga.php">Cadastrar Vaga</a><br>
-    <a href="remover_vaga.php">Remover Vaga</a><br>
-    <a href="visualizar_vagas.php">Visualizar Vagas</a><br>
-    <a href="login.php">Logout</a>
+    
+    <div class="container">
+        <a href="cadastro_vaga.php" class="button">Cadastrar Vaga</a>
+        <a href="remover_vaga.php" class="button">Remover Vaga</a>
+        <a href="visualizar_vagas.php" class="button">Visualizar Vagas</a>
+        <a href="login.php" class="logout">Logout</a>
+    <div>
 </body>
 </html>
