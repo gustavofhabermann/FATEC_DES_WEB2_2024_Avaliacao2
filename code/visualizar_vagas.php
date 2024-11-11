@@ -1,0 +1,37 @@
+<?php
+session_start();
+if (!isset($_SESSION['logged_in'])) {
+    header("Location: index.php");
+    exit();
+}
+
+require './classes/cadastro.php';
+
+$cadastro = new Cadastro();
+$vagas = $cadastro->Listar_Vagas();
+
+if (count($vagas) > 0) {
+    echo "<table border='1'>
+            <tr>
+                <th>ID</th>
+                <th>Nome da Empresa</th>
+                <th>WhatsApp</th>
+                <th>Email</th>
+                <th>Descrição</th>
+                <th>Curso</th>
+            </tr>";
+    foreach ($vagas as $vaga) {
+        echo "<tr>
+                <td>{$vaga['id']}</td>
+                <td>{$vaga['nome_empresa']}</td>
+                <td>{$vaga['whatsapp']}</td>
+                <td>{$vaga['email']}</td>
+                <td>{$vaga['descricao']}</td>
+                <td>" . ($vaga['curso'] == 1 ? "DSM" : "GE") . "</td>
+              </tr>";
+    }
+    echo "</table>";
+} else {
+    echo "Nenhuma vaga disponível.";
+}
+?>
